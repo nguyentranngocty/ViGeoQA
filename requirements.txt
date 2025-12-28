@@ -20,7 +20,7 @@ flaky==3.7.0
 Flask==2.0.1
 Flask-Cors==3.0.10
 ftfy==6.0.3
-gevent==21.1.2
+
 greenlet==1.1.0
 h5py==3.1.0
 idna==2.10
