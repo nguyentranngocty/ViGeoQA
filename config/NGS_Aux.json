@@ -17,9 +17,9 @@
       }
     },
   },
-  "train_data_path": "data/GeoQA3/train.pk",
-  "validation_data_path": "data/GeoQA3/dev.pk",
-  "test_data_path" : "data/GeoQA3/test.pk",
+  "train_data_path": "ViGeoQA3/train.pk",
+  "validation_data_path": "ViGeoQA3/dev.pk",
+  "test_data_path" : "ViGeoQA3/test.pk",
   "evaluate_on_test": true,
   "model": {
     "type": "geo_s2s",
@@ -27,7 +27,7 @@
     "beam_size": 10,
     "target_embedding_dim": 512,
     "scheduled_sampling_ratio": 0,
-    "resnet_pretrained": "data/pretrain/best_jigsaw_model_state_dict",
+    "resnet_pretrained": "pretrain/best_jigsaw_model_state_dict",
     "knowledge_points_ratio": 1,
     "source_embedder": {
       "token_embedders": {
@@ -66,3 +66,4 @@
     }
   }
 }
+
