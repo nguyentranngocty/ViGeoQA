@@ -17,9 +17,9 @@
       }
     },
   },
-  "train_data_path": "/kaggle/input/vigeoqa/train.pk",
-  "validation_data_path": "/kaggle/input/vigeoqa/dev.pk",
-  "test_data_path" : "/kaggle/input/vigeoqa/test.pk",
+  "train_data_path": "vigeoqa/train.pk",
+  "validation_data_path": "vigeoqa/dev.pk",
+  "test_data_path" : "vigeoqa/test.pk",
   "evaluate_on_test": true,
   "model": {
     "type": "geo_s2s",
@@ -27,7 +27,7 @@
     "beam_size": 10,
     "target_embedding_dim": 512,
     "scheduled_sampling_ratio": 0,
-    "resnet_pretrained": "pretrain/best_jigsaw_model_state_dict",
+    "resnet_pretrained": "vigeoqa/best_jigsaw_model_state_dict",
     "knowledge_points_ratio": 1,
     "source_embedder": {
       "token_embedders": {
@@ -66,5 +66,6 @@
     }
   }
 }
+
 
 
