@@ -68,7 +68,7 @@ class SeqReader(DatasetReader):
         self._model_name = model_name
 
         #sub_dict_path = "ViGeoQA/sub_dataset_dict.pk"  # problems type
-        sub_dict_path = "/kaggle/input/vigeoqa/sub_dataset_dict.pk"  # problems type
+        sub_dict_path = "vigeoqa/sub_dataset_dict.pk"  # problems type
         with open(sub_dict_path, 'rb') as file:
             subset_dict = pickle.load(file)
         self.subset_dict = subset_dict
@@ -241,6 +241,7 @@ class SeqReader(DatasetReader):
         fields['point_label'] = ArrayField(np.array(point_label))
 
         return Instance(fields)
+
 
 
 
